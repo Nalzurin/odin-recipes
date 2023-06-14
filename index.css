@@ -10,6 +10,7 @@
     height: 100%;
 }
 .tavern-door {
+    position:fixed;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -19,7 +20,20 @@
     position: absolute;
     top: 5%;
     left:17.5%;
-    padding: 300px 150px;
+    padding: 20% 10%;
+    border: solid 3px black;
     background-color: none;
     text-decoration: none;
+    cursor: pointer;
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
 }
