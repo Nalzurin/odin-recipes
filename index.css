@@ -2,20 +2,27 @@
     margin: 0;
     padding: 0;
 }
-.entrance {
+.entrance, .interior {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.tavern-door {
+.entrance{
+    z-index: 2;
+}
+.interior{
+    z-index: 1;
+}
+.tavern-door, .tavern-interior {
     position:fixed;
     width: 100%;
     height: 100%;
     object-fit: cover;
     
 }
+
 .entrance-button{
     position: absolute;
     top: 5%;
@@ -36,4 +43,5 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 1s;
+    z-index: 999;
 }

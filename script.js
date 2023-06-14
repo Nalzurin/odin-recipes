@@ -13,9 +13,15 @@ document.getElementById('knock_button').addEventListener('click', function() {
         overlay.style.opacity = 1;
         overlay.style.pointerEvents = 'auto';
         }, 1000);
+
         setTimeout(function() {
-            entrance.parentNode.removeChild(entrance);
+            entrance.style.zIndex = 0;
+            setTimeout(function() {
+                overlay.style.opacity = 0;
+            }, 1000);
         }, 1700);
+
+        
     }, 1500);
 
 });
